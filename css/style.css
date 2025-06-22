@@ -1,0 +1,295 @@
+:root {
+            --primary-color: #3b82f6;
+            --primary-hover: #2563eb;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --text-white: #ffffff;
+            --bg-light: #f8fafc;
+            --bg-gray: #f3f4f6;
+            --bg-dark: #111827;
+            --name-color: #FFD700; /* Yellow color */
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Active Navigation Link */
+        .nav-link.active {
+            color: var(--primary-color);
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+            animation: underline 0.3s ease-out;
+        }
+        
+        @keyframes underline {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Animation Classes */
+        .section-animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Home Section with Moving Background */
+        #home {
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            padding: 0 5%;
+        }
+        
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                       url('../img/backimg2.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            animation: zoomBackground 15s infinite alternate ease-in-out;
+        }
+        
+        @keyframes zoomBackground {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .home-content {
+            max-width: 60%;
+            z-index: 1;
+            text-align: left;
+        }
+
+        .profile-container {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Typing Animation */
+        .typing-name {
+            display: inline-block;
+            position: relative;
+            color: var(--name-color);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .typing-name::after {
+            content: "|";
+            position: absolute;
+            right: 0;
+            color: var(--name-color);
+            animation: blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes blink-caret {
+            from, to { opacity: 0 }
+            50% { opacity: 1 }
+        }
+
+        /* Card Hover Effects */
+        /* Experience Card Styling */
+.hover-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #3b82f6;
+}
+
+.hover-card:hover .text-gray-600,
+.hover-card:hover .text-blue-600,
+.hover-card:hover li {
+  color: white !important;
+}
+
+.hover-card:hover .text-blue-500 {
+  color: #bfdbfe !important;
+}
+
+/* Icon Styling */
+.hover-card .text-blue-500 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Title Styling */
+.hover-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.hover-card:hover h4 {
+  color: white !important;
+}
+
+/* Company Info Styling */
+.hover-card .text-blue-600 {
+  display: flex;
+  align-items: center;
+  color: #2563eb;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.hover-card .text-blue-600 i {
+  margin-right: 0.5rem;
+}
+
+/* Description Styling */
+.hover-card .text-gray-600 {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.hover-card .text-gray-600 p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* List Styling */
+.hover-card ul {
+  padding-left: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.hover-card li {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+  position: relative;
+  line-height: 1.5;
+}
+
+.hover-card li::before {
+  content: "•";
+  color: #3b82f6;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.hover-card:hover li::before {
+  color: #bfdbfe;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hover-card {
+    padding: 1.5rem;
+  }
+  
+  .hover-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .hover-card .text-blue-600 {
+    font-size: 0.9rem;
+  }
+  
+  .hover-card li {
+    font-size: 0.9rem;
+  }
+}
+        
+        /* Project Cards */
+        .project-card {
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .project-card:hover {
+            background-color: var(--primary-color) !important;
+            color: white !important;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-card:hover .text-gray-600,
+        .project-card:hover .project-link {
+            color: var(--text-white) !important;
+        }
+
+        /* Skill Bars */
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            #home {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .home-content {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            
+            .profile-container {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+        }

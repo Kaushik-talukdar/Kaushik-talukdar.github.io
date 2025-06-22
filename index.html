@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushik Talukdar - Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS--> 
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-gray-800"><span>Kaushik</span>
+            <span style="color: #3b82f6"> Talukdar</span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-blue-500 transition">Home</a>
+                    <a href="#about" class="nav-link hover:text-blue-500 transition">About</a>
+                    <a href="#resume" class="nav-link hover:text-blue-500 transition">Resume</a>
+                    <a href="#projects" class="nav-link hover:text-blue-500 transition">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-blue-500 transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden py-4" id="mobile-menu">
+                <a href="#home" class="block py-2 hover:text-blue-500 transition">Home</a>
+                <a href="#about" class="block py-2 hover:text-blue-500 transition">About</a>
+                <a href="#resume" class="block py-2 hover:text-blue-500 transition">Resume</a>
+                <a href="#projects" class="block py-2 hover:text-blue-500 transition">Projects</a>
+                <a href="#contact" class="block py-2 hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section with Moving Background -->
+    <section id="home">
+        <div class="home-content section-animate">
+            <div>
+                <h3 class="text-4xl md:text-6xl font-bold mb-4">I am </h3>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="typing-name"></span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8">Data Analyst | Aspiring Data Scientist </p>
+                <div class="flex space-x-4">
+                    
+                    <a href="#projects" class="bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-full transition">My Work</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-container section-animate">
+            <img src="img/profile.png" alt="Profile">
+        </div>
+    </section>
+
+    <!-- About Section with Skills -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 py-12 section-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-start gap-12">
+                <div class="md:w-1/2">
+                    <img src="img/profile2.png" 
+                         alt="About" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                    <p class="text-gray-600 mb-6">
+                        Aspiring Data Scientist with a strong foundation and 2 years of experience as a Data Analyst, proficient in Python, SQL, data analytics, and visualization. 
+                        Proven ability to clean, analyze, and interpret complex datasets to solve business challenges. Adept at developing predictive models, creating insightful dashboards, and performing A/B testing. 
+                        Currently pursuing PG Certificate Course in Data Science to deepen expertise in machine learning and statistical analysis.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <p class="flex items-center">
+                            <i class="fas fa-user mr-2 text-blue-500"></i>
+                            <strong>Name:</strong> <span class="ml-2">Kaushik Talukdar</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-500"></i>
+                            <strong>Email:</strong> <span class="ml-2">kaushiktalukdar647@gmail.com</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-blue-500"></i>
+                            <strong>Phone:</strong> <span class="ml-2">########</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                            <strong>Location:</strong> <span class="ml-2">Guwahati, Assam, India</span>
+                        </p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1qc70UwwH72WbU8UmtGBo8dHjp5N7d9IL/view?usp=drive_link" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition mb-8">
+                        Download CV
+                    </a>
+                    
+                    <!-- Skills Section -->
+                    <h3 class="text-2xl font-semibold mb-4">My Skills</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">SQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Machine Learning</span>
+                                <span>72%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Data Visualization</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Statistical Analysis</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 py-12 section-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Resume</h2>
+            
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-center mb-8">Experience</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Experience 1 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Data Analyst & MIS Executive</h4>
+                        <div class="text-blue-600 mb-3">Go Ridez • Jan 2020 – Dec 2021</div>
+                        <p class="text-gray-600">
+                            GoRidez is a leading self-drive car rental company in the Northeast, particularly in Guwahati , Jorhat and Lakhhimpur.<br>
+             
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2">
+            <li>Led data extraction and analysis using Python and SQL to drive strategic decisions</li>
+            <li>Developed interactive dashboards in Excel and Power BI for operational insights</li>
+            <li>Performed exploratory data analysis (EDA) to identify business trends</li>
+            <li>Created predictive forecasting models to optimize marketing strategies</li>
+            <li>Implemented data-driven solutions that enhanced customer satisfaction metrics</li>
+            
+        </ul>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Content Manager</h4>
+                        <div class="text-blue-600 mb-3">AMTRON • Dec 2021 – Oct 2024</div>
+                        <p class="text-gray-600">
+                            AMTRON a government of Assam undertaking that works in the field of Information Technology and Electronics.
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2">
+
+            <li>Spearheaded the optimization of Assam’s Chief Minister Portal, enhancing website performance and user engagement.</li>
+            <li>Streamlined content management processes, ensuring 100% accuracy in updates and links.</li>
+            <li>Collaborated with developers to implement new features and improve portal functionality using modern web technologies.</li>
+            
+            
+        </ul>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Network Administrator</h4>
+                        <div class="text-blue-600 mb-3">Pathway Communications Infrastructure (P) Ltd • Oct 2018 – Nov 2019</div>
+                        <ul class="list-disc pl-5 space-y-2">
+
+            <li>Installed and configured new systems and computer networks, ensuring robust infrastructure.</li>
+            <li>Provided support for and managed the installation and updating of third-party applications.</li>
+            <li>Resolved client-reported issues with a 90% first-time resolution rate, ensuring seamless network operations.</li>
+            
+            
+        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-semibold text-center mb-8">Education</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Education 1 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Master of Computer Applications (MCA)</h4>
+                        <div class="text-blue-600 mb-3">Cotton University, Assam, India • 2014 - 2017</div>
+                        <p class="text-gray-600">
+                            Focused on computer applications, programming languages, Web Development, and software development.
+                            
+                        </p>
+                    </div>
+                    
+                    <!-- Education 2 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Bachelor of Computer Applications (BCA)</h4>
+                        <div class="text-blue-600 mb-3">Guwahati University • 2011 - 2014</div>
+                        <p class="text-gray-600">
+                            Focused on computer applications, programming languages, Web Development, 
+                            and software development.
+                        </p>
+                    </div>
+                    
+                    <!-- Education 3 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">PG Certificate Course in Data Science </h4>
+                        <div class="text-blue-600 mb-3">Assam Skill University • 2025</div>
+                        <p class="text-gray-600">
+                            Focus: Data Science, Machine Learning, Statistical Analysis
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold text-center mb-8">Certification</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Education 1 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Python Developer Course</h4>
+                        <div class="text-blue-600 mb-3">LearnVern through Skill India Digital • 2023</div>
+                        <p class="text-gray-600">
+                            
+                        </p>
+                    </div>
+                    
+                    <!-- Education 2 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Data Science Essentials</h4>
+                        <div class="text-blue-600 mb-3">Reliance Foundation Skilling Academy through Skill India Digital • 2024</div>
+                        <p class="text-gray-600">
+                           
+                        </p>
+                    </div>
+                    
+                    <!-- Education 3 -->
+                    <div class="hover-card p-8 rounded-lg shadow-md">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Tata Data Visualization Job Simulation</h4>
+                        <div class="text-blue-600 mb-3">Forage • 2024</div>
+                        <p class="text-gray-600">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6 py-12 section-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My Projects</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">A selection of my recent work.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md">
+                    <img src="img/powerbi1.png" 
+                         alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Customer Behavior & Churn Analysis</h3>
+                        <p class="text-gray-600 mb-4">Completed a Customer Churn Analysis project! Used Python for data prep & Power BI for interactive dashboards, identifying key churn drivers in banking.</p>
+                        <a href="https://github.com/Developewithkaushik/Data-Visualization" class="project-link text-blue-500 hover:text-blue-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md">
+                    <img src="img/ML1.png" 
+                         alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Extreme Daily Rainfall Event Classification and Early Warning System</h3>
+                        <p class="text-gray-600 mb-4">
+                            Predicts localized extreme rainfall 24-48 hours in advance using historical data. 
+                    
+                        </p>
+                        <a href="#" class="project-link text-blue-500 hover:text-blue-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md">
+                    <img src="img/power2.png" 
+                         alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">HR Attrition Analysis</h3>
+                        <p class="text-gray-600 mb-4">Attrition Analysis for Comprehensive Insights into employee attrition data, uncovering the underlying reasons driving turnover.</p>
+                        <a href="https://github.com/Developewithkaushik/Meriskill-Internship_Projects?tab=readme-ov-file" class="project-link text-blue-500 hover:text-blue-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/Developewithkaushik?tab=repositories" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 py-12 section-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Me</h2>
+            
+            <!-- "Have a Question?" Button -->
+            <div class="text-center mb-12">
+                <a href="https://forms.gle/ZdicG9hSHReRTCpSA" 
+                   class="question-btn inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
+                    <i class="fas fa-question-circle mr-2"></i> Have a Question? Click Here
+                </a>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white p-12 rounded-lg shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Address -->
+                    <div class="contact-info text-center p-6 rounded-lg hover:bg-gray-50">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Address</h3>
+                        <p class="text-gray-600">Guwahati<br>Kamrup Metro, Assam</p>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="contact-info text-center p-6 rounded-lg hover:bg-gray-50">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Email</h3>
+                        <p class="text-gray-600">
+                            <a href="mailto:kaushik.talukdar@example.com" class="hover:text-blue-500 transition">
+                                kaushiktalukdar647@gmail.com</a>
+                        </p>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="contact-info text-center p-6 rounded-lg hover:bg-gray-50">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                        <p class="text-gray-600">
+                            <a href="tel:+15559876543" class="hover:text-blue-500 transition">+91 ########</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Download Resume & Social Links -->
+                <div class="mt-12 text-center">
+                    <a href="https://drive.google.com/file/d/1qc70UwwH72WbU8UmtGBo8dHjp5N7d9IL/view" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition text-lg">
+                        <i class="fas fa-download mr-2"></i> Download Resume
+                    </a>
+                    
+                    <div class="flex justify-center space-x-6 mt-8">
+                        <a href="www.linkedin.com/in/kaushiktalukdar" class="text-gray-600 hover:text-blue-500 text-2xl transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Developewithkaushik" class="text-gray-600 hover:text-blue-500 text-2xl transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-500 text-2xl transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Kaushik Talukdar(Data Scientist). All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="www.linkedin.com/in/kaushiktalukdar" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Developewithkaushik" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
