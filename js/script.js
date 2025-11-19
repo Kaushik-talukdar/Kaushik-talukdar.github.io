@@ -1,149 +1,127 @@
-// Mobile menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+// Mobile Navigation Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-        // Set active navigation link
-        function setActiveLink() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (window.scrollY >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
+// Typing Effect for Home Section
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = '';
+    
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else {
+            // Keep the cursor blinking
+            element.style.borderRight = '3px solid white';
+            element.style.animation = 'blink 1s infinite';
         }
+    }
+    
+    type();
+}
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    // Remove active class from all links
-                    document.querySelectorAll('.nav-link').forEach(link => {
-                        link.classList.remove('active');
-                    });
-                    
-                    // Add active class to clicked link
-                    this.classList.add('active');
-                    
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    document.getElementById('mobile-menu').classList.add('hidden');
-                }
-            });
-        });
+// Initialize typing effect when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const typingElement = document.querySelector('.typing-name');
+    const name = "Kaushik Talukdar";
+    typeWriter(typingElement, name, 150);
+});
 
-        // Highlight active navigation link on scroll
-        window.addEventListener('scroll', function() {
-            setActiveLink();
-        });
+// Project Filtering
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
 
-        // Animate skill bars when they come into view
-        const skillBars = document.querySelectorAll('.skill-bar');
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
         
-        function animateSkillBars() {
-            skillBars.forEach(bar => {
-                const rect = bar.getBoundingClientRect();
-                if (rect.top <= window.innerHeight - 100) {
-                    bar.style.width = bar.style.width; // Triggers the animation
-                }
-            });
-        }
+        // Add active class to clicked button
+        button.classList.add('active');
         
-        // Intersection Observer for section animations
-        const animateSections = document.querySelectorAll('.section-animate');
+        const filterValue = button.getAttribute('data-filter');
         
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('section-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-        
-        animateSections.forEach(section => {
-            observer.observe(section);
-        });
-
-        // Typing animation for name
-        function typeName(element, text, i = 0) {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(() => typeName(element, text, i), 100);
+        projectCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                card.style.display = 'block';
             } else {
-                element.style.borderRight = 'none';
+                card.style.display = 'none';
             }
+        });
+    });
+});
+
+// Contact Form Submission
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // In a real application, you would send this data to a server
+    // For this example, we'll just show an alert
+    alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
+    
+    // Reset the form
+    contactForm.reset();
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
         }
+    });
+});
 
-        // Mouse movement parallax effect
-        document.addEventListener('mousemove', function(e) {
-            const home = document.getElementById('home');
-            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-            home.style.setProperty('--x', xAxis + 'px');
-            home.style.setProperty('--y', yAxis + 'px');
-        });
-
-        // Add CSS variables for mouse movement effect
-        const style = document.createElement('style');
-        style.textContent = `
-            #home::before {
-                transform: translateX(var(--x, 0)) translateY(var(--y, 0)) scale(1.05);
-                transition: transform 0.3s ease-out;
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Start the typing animation when the page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            const nameElement = document.querySelector('.typing-name');
-            const nameText = "Kaushik Talukdar";
-            nameElement.innerHTML = '';
-            nameElement.style.borderRight = '.15em solid var(--name-color)';
-            typeName(nameElement, nameText);
-            
-            // Set active link on page load
-            setActiveLink();
-            
-            // Animate home section immediately
-            document.querySelector('#home').classList.add('section-visible');
-            
-            // Run once on page load
-            animateSkillBars();
-            
-            // Run on scroll
-            window.addEventListener('scroll', animateSkillBars);
-        });
-
-        // Force animation when navigating via hash
-        window.addEventListener('hashchange', function() {
-            const section = document.querySelector(window.location.hash);
-            if (section && section.classList.contains('section-animate')) {
-                section.classList.add('section-visible');
-            }
-        });
+// Active navigation link highlighting
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+        }
+    });
+});

@@ -3,156 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaushik Talukdar - Portfolio</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS--> 
-     <link rel="stylesheet" href="css/style.css">
+    <title>Kaushik Talukdar | Senior Data Analyst</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="text-gray-800">
+<body>
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="#home" class="text-2xl font-bold text-gray-800"><span>Kaushik</span>
-            <span style="color: #3b82f6"> Talukdar</span></a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link hover:text-blue-500 transition">Home</a>
-                    <a href="#about" class="nav-link hover:text-blue-500 transition">About</a>
-                    <a href="#resume" class="nav-link hover:text-blue-500 transition">Resume</a>
-                    <a href="#projects" class="nav-link hover:text-blue-500 transition">Projects</a>
-                    <a href="#contact" class="nav-link hover:text-blue-500 transition">Contact</a>
-                </div>
-                <!-- Mobile menu button -->
-                <button class="md:hidden focus:outline-none" id="menu-btn">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div class="md:hidden hidden py-4" id="mobile-menu">
-                <a href="#home" class="block py-2 hover:text-blue-500 transition">Home</a>
-                <a href="#about" class="block py-2 hover:text-blue-500 transition">About</a>
-                <a href="#resume" class="block py-2 hover:text-blue-500 transition">Resume</a>
-                <a href="#projects" class="block py-2 hover:text-blue-500 transition">Projects</a>
-                <a href="#contact" class="block py-2 hover:text-blue-500 transition">Contact</a>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Kaushik Talukdar</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section with Moving Background -->
+    <!-- Home Section with Background Photo -->
     <section id="home">
         <div class="home-content section-animate">
             <div>
-                <h3 class="text-4xl md:text-6xl font-bold mb-4">I am </h3>
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                <h3 class="home-subtitle">I am</h3>
+                <h1 class="home-title">
                     <span class="typing-name"></span>
                 </h1>
-                <p class="text-xl md:text-2xl mb-8">Data Analyst | Aspiring Data Scientist </p>
-                <div class="flex space-x-4">
-                    
-                    <a href="#projects" class="bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-full transition">My Work</a>
+                <p class="home-description">Data Analyst | Aspiring Data Scientist</p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-outline">My Work</a>
                 </div>
             </div>
         </div>
         
         <div class="profile-container section-animate">
-            <img src="img/profile.png" alt="Profile">
+            <!-- Your actual profile image -->
+            <div class="profile-image">
+                <img src="img/profile2.jpg" alt="Kaushik Talukdar">
+            </div>
         </div>
     </section>
 
-    <!-- About Section with Skills -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6 py-12 section-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
-            <div class="flex flex-col md:flex-row items-start gap-12">
-                <div class="md:w-1/2">
-                    <img src="img/profile2.png" 
-                         alt="About" class="rounded-lg shadow-lg w-full">
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
-                    <p class="text-gray-600 mb-6">
-                        I am a goal-oriented Data Analyst and Content Management Professional with almost 4 years of experience in data analysis, reporting automation, dashboard development, and content operations. Skilled in Python, SQL, Excel (Advanced, Pivot Tables), Power BI, and data management tools, with expertise in data cleaning, data preparation, statistical analysis, predictive modeling, and KPI reporting. I enjoy analyzing complex datasets, developing interactive dashboards using Power BI, and delivering actionable business insights that improve efficiency and optimize operations. 
-                        I am proficient at root cause analysis and business intelligence, and have strong critical thinking, problem-solving, and leadership skills.
-                    </p>
-                    <div class="space-y-3 mb-8">
-                        <p class="flex items-center">
-                            <i class="fas fa-user mr-2 text-blue-500"></i>
-                            <strong>Name:</strong> <span class="ml-2">Kaushik Talukdar</span>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-photo">
+                        <!-- Your actual profile image -->
+                        <img src="img/profile.png" alt="Kaushik Talukdar">
+                    </div>
+                    <div class="about-details">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                            </svg>
+                            kaushiktalukdar647@gmail.com
                         </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-envelope mr-2 text-blue-500"></i>
-                            <strong>Email:</strong> <span class="ml-2">kaushiktalukdar647@gmail.com</span>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.24 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            +91 ##########
                         </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-phone mr-2 text-blue-500"></i>
-                            <strong>Phone:</strong> <span class="ml-2">########</span>
-                        </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
-                            <strong>Location:</strong> <span class="ml-2">Guwahati, Assam, India</span>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                            </svg>
+                            Guwahati, Assam, India
                         </p>
                     </div>
-                    <a href="https://drive.google.com/file/d/1Ny_6WsBRQqcRB2RoZL6WmkJDl47SpCke/view" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition mb-8">
-                        Download Resume
-                    </a>
-                    
-                    <!-- Skills Section -->
-                    <h3 class="text-2xl font-semibold mb-4">My Skills</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">Python</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
+                    <a href="https://drive.google.com/file/d/17VZjsvcMxlVOpcahtBatfPM90t7LocRT/view?usp=sharing" class="btn">Download Resume</a>
+                </div>
+                <div class="about-right">
+                    <h3>About Me</h3>
+                    <p>
+                        I’m a Data Analyst with experience turning raw, messy data into clear insights that drive business decisions. My work spans SQL-driven analysis, Python automation, dashboard development, and end-to-end problem solving across marketing, operations, and customer analytics. I focus on building reporting systems that are accurate, scalable, and easy for stakeholders to use, while uncovering patterns that improve performance and efficiency.
+                    </p>
+                    <p>
+                        I enjoy breaking down complex problems, finding what actually matters, and translating data into practical actions that help teams move faster and make better decisions. I’ve worked with large datasets, built self-serve dashboards, automated repetitive workflows, and delivered insights under tight timelines.
+                    </p>
+                    <p>
+                        <b>My goal is simple: use data intelligently to solve real problems and create meaningful business impact.</b>
+                    </p>
+                    <h3>Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill">Excel</div>
+                        <div class="skill">SQL</div>
+                        <div class="skill">Python</div>
+                        <div class="skill">Tableau</div>
+                        <div class="skill">Power BI</div>
                         
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">SQL</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">Machine Learning</span>
-                                <span>72%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 72%"></div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">Data Visualization</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">Statistical Analysis</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
+                        <div class="skill">Machine Learning</div>
+                        <div class="skill">Data Visualization</div>
+                        <div class="skill">Statistical Analysis</div>
+                        <div class="skill">Data Mining</div>
+                        <div class="skill">ETL</div>
+                        <div class="skill">Predictive Modeling</div>
                     </div>
                 </div>
             </div>
@@ -160,187 +115,201 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 py-12 section-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Resume</h2>
-            
-            <div class="mb-16">
-                <h3 class="text-2xl font-semibold text-center mb-8">Experience</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Experience 1 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-laptop-code"></i>
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <!-- Experience Section -->
+                <div class="resume-category">
+                    <h3>Experience</h3>
+                    <div class="horizontal-grid">
+                        <!-- Experience 1 -->
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 18C21.1 18 22 17.1 22 16V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V16C2 17.1 2.9 18 4 18H0V20H24V18H20ZM4 6H20V16H4V6Z"/>
+                                </svg>
+                            </div>
+                            <h4>Content Manager (Data Analytics & Reporting Focus)</h4>
+                            <div class="experience-company">AMTRON</div>
+                            <div class="experience-duration">Dec 2021 – Oct 2024</div>
+                            <p class="experience-description">
+                                AMTRON a government of Assam undertaking that works in the field of Information Technology and Electronics.
+                            </p>
+                            <ul>
+                                <li>Designed, built, and maintained interactive Power BI dashboards tracking KPIs and presenting trends to leadership teams for data-driven decision-making.</li>
+                                <li>Analyzed user engagement and portal performance metrics to deliver actionable insights, improving content reach and operational efficiency by 25%.</li>
+                                <li>Collaborated with cross-functional teams to standardize content and implement data governance practices, enhancing reliability and consistency across platforms.</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Content Manager (Data Analytics & Reporting Focus)</h4>
-                        <div class="text-blue-600 mb-3">AMTRON • Dec 2021 – Oct 2024</div>
-                        <p class="text-gray-600">
-                            AMTRON a government of Assam undertaking that works in the field of Information Technology and Electronics.
-                        </p>
-                        <ul class="list-disc pl-5 space-y-2">
 
-            <li>Designed, built, and maintained interactive Power BI dashboards tracking KPIs and presenting trends to leadership teams for data-driven decision-making.</li>
-            <li>Analyzed user engagement and portal performance metrics to deliver actionable insights, improving content reach and operational efficiency by 25%.</li>
-            <li>Collaborated with cross-functional teams to standardize content and implement data governance practices, enhancing reliability and consistency across platforms.</li>
-            
-            
-        </ul>
-                    </div>
-
-
-                    <!-- Experience 2 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-briefcase"></i>
+                        <!-- Experience 2 -->
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6H16V4C16 2.89 15.11 2 14 2H10C8.89 2 8 2.89 8 4V6H4C2.89 6 2 6.89 2 8V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM10 4H14V6H10V4ZM20 19H4V8H20V19Z"/>
+                                </svg>
+                            </div>
+                            <h4>Data Analyst & MIS Executive</h4>
+                            <div class="experience-company">Go Ridez</div>
+                            <div class="experience-duration">Jan 2020 – Dec 2021</div>
+                            <p class="experience-description">
+                                GoRidez is a leading self-drive car rental company in the Northeast, particularly in Guwahati, Jorhat and Lakhhimpur.
+                            </p>
+                            <ul>
+                                <li>Built interactive Power BI dashboards visualizing rides, cancellations, and revenue trends in real time to support performance tracking.</li>
+                                <li>Delivered data-driven recommendations that optimized fleet utilization and improved key conversion KPIs.</li>
+                                <li>Collaborated with cross-functional stakeholders to translate analytical findings into actionable business strategies.</li>
+                                <li>Conducted root-cause analysis to identify drivers of customer churn and operational inefficiencies, guiding corrective actions.</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Data Analyst & MIS Executive</h4>
-                        <div class="text-blue-600 mb-3">Go Ridez • Jan 2020 – Dec 2021</div>
-                        <p class="text-gray-600">
-                            GoRidez is a leading self-drive car rental company in the Northeast, particularly in Guwahati , Jorhat and Lakhhimpur.<br>
-             
-                        </p>
-                        <ul class="list-disc pl-5 space-y-2">
-            <li>Built interactive Power BI dashboards visualizing rides, cancellations, and revenue trends in real time to support performance tracking.</li>
-            <li>Delivered data-driven recommendations that optimized fleet utilization and improved key conversion KPIs.</li>
-            <li>Collaborated with cross-functional stakeholders to translate analytical findings into actionable business strategies.</li>
-            <li>Conducted root-cause analysis to identify drivers of customer churn and operational inefficiencies, guiding corrective actions.</li>
-            
-            
-        </ul>
-                    </div>
-                    
 
-                    
-                    <!-- Experience 3 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-code"></i>
+                        <!-- Experience 3 -->
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.4 16.6L4.8 12L9.4 7.4L8 6L2 12L8 18L9.4 16.6ZM14.6 16.6L19.2 12L14.6 7.4L16 6L22 12L16 18L14.6 16.6Z"/>
+                                </svg>
+                            </div>
+                            <h4>Network Administrator</h4>
+                            <div class="experience-company">Pathway Communications Infrastructure (P) Ltd</div>
+                            <div class="experience-duration">Oct 2018 – Nov 2019</div>
+                            <ul>
+                                <li>Installed and configured new systems and computer networks, ensuring robust infrastructure.</li>
+                                <li>Provided support for and managed the installation and updating of third-party applications.</li>
+                                <li>Resolved client-reported issues with a 90% first-time resolution rate, ensuring seamless network operations.</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Network Administrator</h4>
-                        <div class="text-blue-600 mb-3">Pathway Communications Infrastructure (P) Ltd • Oct 2018 – Nov 2019</div>
-                        <ul class="list-disc pl-5 space-y-2">
-
-            <li>Installed and configured new systems and computer networks, ensuring robust infrastructure.</li>
-            <li>Provided support for and managed the installation and updating of third-party applications.</li>
-            <li>Resolved client-reported issues with a 90% first-time resolution rate, ensuring seamless network operations.</li>
-            
-            
-        </ul>
-                    </div>
-
-                    
-                </div>
-            </div>
-
-            <div class="mb-16">
-                <h3 class="text-2xl font-semibold text-center mb-8">Internship</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Experience 1 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h4 class="text-xl font-semibold mb-2">Data Science Internship</h4>
-                        <div class="text-blue-600 mb-3">Sabudh Foundation • July 2025 – Present</div>
-                        <p class="text-gray-600">
-                            Sabudh Foundation is a data-driven initiative by leading data scientists and the Punjab government, empowering youth to apply AI for social good through real-world projects in sectors like education, healthcare, and public policy.<br>
-             
-                        </p>
-
-                        <ul class="list-disc pl-5 space-y-2">
-                            <li>Building projects on Machine Learning using Python, Scikit-learn, and automated performance tracking pipelines</li>
-                            <li>Collaborating with cross-functional teams to convert model outputs into business-ready insights and visual dashboards</li>
-                            
-                            
-                        </ul> 
-
-                    </div>
-             
-                    
-                </div>
-            </div>
-            
-            <div>
-                <h3 class="text-2xl font-semibold text-center mb-8">Education</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Education 1 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="text-xl font-semibold mb-2">Master of Computer Applications (MCA)</h4>
-                        <div class="text-blue-600 mb-3">Cotton University, Assam, India • 2014 - 2017</div>
-                        <p class="text-gray-600">
-                            Focused on computer applications, programming languages, Web Development, and software development.
-                            
-                        </p>
-                    </div>
-                    
-                    <!-- Education 2 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <h4 class="text-xl font-semibold mb-2">Bachelor of Computer Applications (BCA)</h4>
-                        <div class="text-blue-600 mb-3">Guwahati University • 2011 - 2014</div>
-                        <p class="text-gray-600">
-                            Focused on computer applications, programming languages, Web Development, 
-                            and software development.
-                        </p>
-                    </div>
-                    
-                    <!-- Education 3 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h4 class="text-xl font-semibold mb-2">PG Certificate Course in Data Science </h4>
-                        <div class="text-blue-600 mb-3">Assam Skill University • 2025</div>
-                        <p class="text-gray-600">
-                            Focus: Data Science, Machine Learning, Statistical Analysis
-                        </p>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <h3 class="text-2xl font-semibold text-center mb-8">Certification</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Education 1 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-certificate"></i>
+                <!-- Education Section -->
+                <div class="resume-category">
+                    <h3>Education</h3>
+                    <div class="horizontal-grid">
+                        <!-- Education 1 -->
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 17.18 8 16 12 16C16 16 19 17.18 19 17.18V13.18L12 17L5 13.18Z"/>
+                                </svg>
+                            </div>
+                            <h4>Master of Computer Applications (MCA)</h4>
+                            <div class="education-institution">Cotton University, Assam, India</div>
+                            <div class="education-duration">2014 - 2017</div>
+                            <ul>
+                                <li>Focused on computer applications, programming languages, Web Development, and software development.</li>
+                                
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Python Developer Course</h4>
-                        <div class="text-blue-600 mb-3">LearnVern through Skill India Digital • 2023</div>
-                        <p class="text-gray-600">
-                            
-                        </p>
+
+                        <!-- Education 2 -->
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 17.18 8 16 12 16C16 16 19 17.18 19 17.18V13.18L12 17L5 13.18Z"/>
+                                </svg>
+                            </div>
+                            <h4>Bachelor of Computer Applications (BCA)</h4>
+                            <div class="education-institution">Gauhati University, Assam, India</div>
+                            <div class="education-duration">2011 - 2014</div>
+                            <ul>
+                                <li>Focused on computer applications, programming languages, Web Development, 
+                            and software development.</li>
+                                
+                            </ul>
+                        </div>
+
+                        <!-- Education 3 -->
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 17.18 8 16 12 16C16 16 19 17.18 19 17.18V13.18L12 17L5 13.18Z"/>
+                                </svg>
+                            </div>
+                            <h4>PG Certificate Course in Data Science </h4>
+                            <div class="education-institution">Assam Skill University, Assam, India</div>
+                            <div class="education-duration">2025</div>
+                            <ul>
+                                <li> Focus: Data Science, Machine Learning, Statistical Analysis</li>
+                                
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <!-- Education 2 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-certificate"></i>
+                </div>
+
+                <!-- Internship Section -->
+                <div class="resume-category">
+                    <h3>Internship</h3>
+                    <div class="horizontal-grid">
+                        <div class="internship-card">
+                            <div class="internship-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3ZM14 17H7V15H14V17ZM17 13H7V11H17V13ZM17 9H7V7H17V9Z"/>
+                                </svg>
+                            </div>
+                            <h4>Data Science Internship</h4>
+                            <div class="internship-company">Sabudh Foundation</div>
+                            <div class="internship-duration">July 2025 - Present</div>
+                            <ul>
+                                <li>Building projects on Machine Learning using Python, Scikit-learn, and automated performance tracking pipelines</li>
+                                <li>Collaborating with cross-functional teams to convert model outputs into business-ready insights and visual dashboards</li>
+                            </ul>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Data Science Essentials</h4>
-                        <div class="text-blue-600 mb-3">Reliance Foundation Skilling Academy through Skill India Digital • 2024</div>
-                        <p class="text-gray-600">
-                           
-                        </p>
                     </div>
-                    
-                    <!-- Education 3 -->
-                    <div class="hover-card p-8 rounded-lg shadow-md">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-certificate"></i>
+                </div>
+
+                <!-- Certifications Section -->
+                <div class="resume-category">
+                    <h3>Certifications</h3>
+                    <div class="horizontal-grid">
+                        <!-- Certification 1 -->
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
+                                </svg>
+                            </div>
+                            <h4>Python Developer Course</h4>
+                            <div class="certification-issuer">LearnVern through Skill India Digital </div>
+                            <div class="certification-duration">2023</div>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Tata Data Visualization Job Simulation</h4>
-                        <div class="text-blue-600 mb-3">Forage • 2024</div>
-                        <p class="text-gray-600">
-                            
-                        </p>
+
+                        <!-- Certification 2 -->
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
+                                </svg>
+                            </div>
+                            <h4>Data Science Essentials</h4>
+                            <div class="certification-issuer">Reliance Foundation Skilling Academy through Skill India Digital</div>
+                            <div class="certification-duration">2024</div>
+                        </div>
+
+                        <!-- Certification 3 -->
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
+                                </svg>
+                            </div>
+                            <h4>ETL in Python and SQL</h4>
+                            <div class="certification-issuer">LinkedIn Learning</div>
+                            <div class="certification-duration">2025</div>
+                        </div>
+
+                        <!-- Certification 4 -->
+                        <!--<div class="certification-card"> 
+                            <div class="certification-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
+                                </svg>
+                            </div>
+                            <h4>Python for Data Science and Machine Learning</h4>
+                            <div class="certification-issuer">Udemy</div>
+                            <div class="certification-duration">2018</div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -348,142 +317,260 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="container mx-auto px-6 py-12 section-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My Projects</h2>
-            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">A selection of my recent work.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card rounded-lg overflow-hidden shadow-md">
-                    <img src="img/powerbi1.png" 
-                         alt="Project 1" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Customer Behavior & Churn Analysis</h3>
-                        <p class="text-gray-600 mb-4">Completed a Customer Churn Analysis project! Used Python for data prep & Power BI for interactive dashboards, identifying key churn drivers in banking.</p>
-                        <a href="https://github.com/Kaushik-talukdar/Data-Visualization" class="project-link text-blue-500 hover:text-blue-700 font-medium">View Project →</a>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <!--<button class="filter-btn" data-filter="excel">Excel</button> -->
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="visualization">Visualization</button>
+                <button class="filter-btn" data-filter="ml">ML</button>
+            </div>
+            <div class="projects-grid">
+                <!--<div class="project-card" data-category="excel">
+                    <div class="project-img">
+                        Excel Dashboard
+                    </div>
+                    <div class="project-content">
+                        <h3>Sales Performance Dashboard</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Excel</span>
+                            <span class="project-tag">Dashboard</span>
+                        </div>
+                        <p>Interactive Excel dashboard for tracking sales performance across regions and products.</p>
+                        <div class="project-actions">
+                            <a href="#">View Project</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<div class="project-card" data-category="sql">
+                    <div class="project-img">
+                        Database Schema
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Database Design</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Database</span>
+                        </div>
+                        <p>Designed and implemented a comprehensive database for an e-commerce platform.</p>
+                        <div class="project-actions">
+                            <a href="#">View Project</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="project-card" data-category="visualization">
+                    <div class="project-img">
+                        <img src="img/powerbi1.png" alt="Customer Churn Analysis Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Behavior & Churn Analysis</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Visualization</span>
+                        </div>
+                        <p>Completed a Customer Churn Analysis project! Used Python for data prep & Power BI for interactive dashboards, identifying key churn drivers in banking.</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/Kaushik-talukdar/Data-Visualization">View Project</a>
+                            
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card rounded-lg overflow-hidden shadow-md">
-                    <img src="img/ML1.png" 
-                         alt="Project 2" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Extreme Daily Rainfall Event Classification and Early Warning System</h3>
-                        <p class="text-gray-600 mb-4">
-                            Predicts localized extreme rainfall 24-48 hours in advance using historical data. 
-                    
-                        </p>
-                        <a href="https://extreme-daily-rainfall-event-classification-and-early-warning.streamlit.app/" class="project-link text-blue-500 hover:text-blue-700 font-medium">View Project →</a>
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                      <img src="img/rain.png" alt="Extreme Daily Rainfall Event Classification" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Extreme Daily Rainfall Event Classification and Early Warning System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                        <p>Predicts localized extreme rainfall 24-48 hours in advance using historical data. </p>
+                        <div class="project-actions">
+                            <a href="https://extreme-daily-rainfall-event-classification-and-early-warning.streamlit.app/">View Project</a>
+                            
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card rounded-lg overflow-hidden shadow-md">
-                    <img src="img/Fraud-Detection.png" 
-                         alt="Project 3" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Fraud Detection System for Charitable Donations (End-to-End ML Deployment)</h3>
-                        <p class="text-gray-600 mb-4">Designed and deployed a scalable, modular fraud detection solution that flags high-risk transactions with actionable explanations (e.g., IP burst + location anomaly).</p>
-                        <a href="https://github.com/Kaushik-talukdar/Fraud-Detection-in-Charitable-Donations" class="project-link text-blue-500 hover:text-blue-700 font-medium">View Project →</a>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-img">
+                        <img src="img/Fraud-Detection.png" alt="Fraud Detection System" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Fraud Detection System for Charitable Donations (End-to-End ML Deployment)</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                        <p>Designed and deployed a scalable, modular fraud detection solution that flags high-risk transactions with actionable explanations (e.g., IP burst + location anomaly). </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/Kaushik-talukdar/Fraud-Detection-in-Charitable-Donations">View Project</a>
+                            
+                        </div>
                     </div>
                 </div>
-            </div> 
-            
-            <div class="text-center mt-12">
-                <a href="https://github.com/Kaushik-talukdar?tab=repositories" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition">
-                    View All Projects
-                </a>
+                <div class="project-card" data-category="sql">
+                    <div class="project-img">
+                        <img src="img/sql1.png" alt="Global coffee chain's performance analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Global coffee chain's performance analysis</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">ETL</span>
+                            <span class="project-tag">Analysis</span>
+                        </div>
+                        <p>This comprehensive SQL project analyzes the performance of a fictional global coffee chain with locations in 15 countries. </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/Kaushik-talukdar/SQL_Project">View Project</a>
+                            
+                        </div>
+                    </div>
+                </div> 
+                <!--<div class="project-card" data-category="visualization">
+                    <div class="project-img">
+                        Power BI Report
+                    </div>
+                    <div class="project-content">
+                        <h3>Financial Performance Report</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">Finance</span>
+                        </div>
+                        <p>Comprehensive Power BI report for tracking financial KPIs and performance metrics.</p>
+                        <div class="project-actions">
+                            <a href="#">View Project</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/Kaushik-talukdar?tab=repositories" class="btn" target="_blank">View All Projects on GitHub</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 py-12 section-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Me</h2>
-            
-            <!-- "Have a Question?" Button -->
-            <div class="text-center mb-12">
-                <a href="https://forms.gle/ZdicG9hSHReRTCpSA" 
-                   class="question-btn inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
-                    <i class="fas fa-question-circle mr-2"></i> Have a Question? Click Here
-                </a>
-            </div>
-            
-            <div class="max-w-4xl mx-auto bg-white p-12 rounded-lg shadow-md">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Address -->
-                    <div class="contact-info text-center p-6 rounded-lg hover:bg-gray-50">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Address</h3>
-                        <p class="text-gray-600">Guwahati<br>Kamrup Metro, Assam</p>
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect!</h3>
+                <p>I'm always open to discussing data analytics opportunities, collaborations, or just having a chat about data science. Feel free to reach out through any of the channels below or use the Google Form.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                        </svg>
                     </div>
-                    
-                    <!-- Email -->
-                    <div class="contact-info text-center p-6 rounded-lg hover:bg-gray-50">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Email</h3>
-                        <p class="text-gray-600">
-                            <a href="mailto:kaushik.talukdar@example.com" class="hover:text-blue-500 transition">
-                                kaushiktalukdar647@gmail.com</a>
-                        </p>
-                    </div>
-                    
-                    <!-- Phone -->
-                    <div class="contact-info text-center p-6 rounded-lg hover:bg-gray-50">
-                        <div class="text-blue-500 text-4xl mb-4">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Phone</h3>
-                        <p class="text-gray-600">
-                            <a href="tel:+15559876543" class="hover:text-blue-500 transition">+91 ########</a>
-                        </p>
+                    <div class="contact-details">
+                        <h3>Address</h3>
+                        <p>Guwahati, Kamrup Metro, Assam, India</p>
                     </div>
                 </div>
                 
-                <!-- Download Resume & Social Links -->
-                <div class="mt-12 text-center">
-                    <a href="https://drive.google.com/file/d/1Ny_6WsBRQqcRB2RoZL6WmkJDl47SpCke/view" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition text-lg">
-                        <i class="fas fa-download mr-2"></i> Download Resume
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>kaushiktalukdar647@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.24 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+91 ##########</p>
+                    </div>
+                </div>
+
+                <!-- Google Form Button -->
+                <div class="google-form-section">
+                    <h3>Send me a message</h3>
+                    <p>Prefer to use a form? Click the button below to open my Google Contact Form in a new tab.</p>
+                    <a href="https://forms.gle/jggdP9G4yhkPAMSs8" class="btn btn-google-form" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 4.5V18h-2V6.5h-2V18H7V4h5v2.5zm5 11.5H9v-2h9v2zm0-4H9v-2h9v2zm0-4H9v-2h9v2z"/>
+                        </svg>
+                        Open Contact Form
                     </a>
+                </div>
+                
+                <a href="https://drive.google.com/file/d/17VZjsvcMxlVOpcahtBatfPM90t7LocRT/view?usp=sharing" class="btn btn-download">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+            
+            <!-- Right side - Contact Methods -->
+            <div class="contact-methods">
+                <h3>Quick Connect</h3>
+                <p>You can also reach me directly through these platforms:</p>
+                
+                <div class="quick-contact-cards">
+                    <div class="contact-method-card">
+                        <div class="method-icon email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <h4>Email</h4>
+                        <p>kaushiktalukdar647@gmail.com</p>
+                        <a href="mailto:kaushiktalukdar647@gmail.com" class="method-link">Send Email</a>
+                    </div>
                     
-                    <div class="flex justify-center space-x-6 mt-8">
-                        <a href="https://www.linkedin.com/in/kaushiktalukdar/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-500 text-2xl transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/Kaushik-talukdar" class="text-gray-600 hover:text-blue-500 text-2xl transition">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="text-gray-600 hover:text-blue-500 text-2xl transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                    <div class="contact-method-card">
+                        <div class="method-icon linkedin">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect professionally</p>
+                        <a href="https://www.linkedin.com/in/kaushiktalukdar/" class="method-link" target="_blank" rel="noopener">View Profile</a>
+                    </div>
+                    
+                    <div class="contact-method-card">
+                        <div class="method-icon github">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                            </svg>
+                        </div>
+                        <h4>GitHub</h4>
+                        <p>View my projects</p>
+                        <a href="https://github.com/Kaushik-talukdar" class="method-link" target="_blank" rel="noopener">Visit GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Kaushik Talukdar(Data Scientist). All rights reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/kaushiktalukdar/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/Kaushik-talukdar" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
+    <footer>
+        <div class="footer-content">
+            
+            <p class="copyright">© 2025 Kaushik Talukdar. All Rights Reserved.</p>
         </div>
     </footer>
 
