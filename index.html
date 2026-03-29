@@ -1,602 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaushik Talukdar | Senior Data Analyst</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaushik Talukdar — Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Kaushik Talukdar</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Home Section with Background Photo -->
-    <section id="home">
-        <div class="home-content section-animate">
-            <div>
-                <h3 class="home-subtitle">I am</h3>
-                <h1 class="home-title">
-                    <span class="typing-name"></span>
-                </h1>
-                <p class="home-description">Data Analyst | Aspiring Data Scientist</p>
-                <div class="home-buttons">
-                    <a href="#projects" class="btn btn-outline">My Work</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="profile-container section-animate">
-            <!-- Your actual profile image -->
-            <div class="profile-image">
-                <img src="img/profile3 - Copy.png" alt="Kaushik Talukdar">
-            </div>
-        </div>
-    </section>
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a href="#hero" class="nav-logo">Kaushik Talukdar<span>.</span></a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact" class="nav-btn">Contact Me</a></li>
+  </ul>
+</nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-container">
-                <div class="about-left">
-                    <div class="about-photo">
-                        <!-- Your actual profile image -->
-                        <img src="img/profile3 - Copy.png" alt="Kaushik Talukdar">
-                    </div>
-                    <div class="about-details">
-                        <p>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
-                            </svg>
-                            kaushiktalukdar647@gmail.com
-                        </p>
-                        <p>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.24 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
-                            </svg>
-                            +91 ##########
-                        </p>
-                        <p>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
-                            </svg>
-                            Guwahati, Assam, India
-                        </p>
-                    </div>
-                    <a href="https://drive.google.com/file/d/17VZjsvcMxlVOpcahtBatfPM90t7LocRT/view?usp=sharing" class="btn">Download Resume</a>
-                </div>
-                <div class="about-right">
-                    <h3>About Me</h3>
-                    <p>
-                        I’m a Data Analyst with experience turning raw, messy data into clear insights that drive business decisions. My work spans SQL-driven analysis, Python automation, dashboard development, and end-to-end problem solving across marketing, operations, and customer analytics. I focus on building reporting systems that are accurate, scalable, and easy for stakeholders to use, while uncovering patterns that improve performance and efficiency.
-                    </p>
-                    <p>
-                        I enjoy breaking down complex problems, finding what actually matters, and translating data into practical actions that help teams move faster and make better decisions. I’ve worked with large datasets, built self-serve dashboards, automated repetitive workflows, and delivered insights under tight timelines.
-                    </p>
-                    <p>
-                        <b>My goal is simple: use data intelligently to solve real problems and create meaningful business impact.</b>
-                    </p>
-                    <h3>Skills</h3>
-                    <div class="skills-container">
-                        <div class="skill">Excel</div>
-                        <div class="skill">SQL</div>
-                        <div class="skill">Python</div>
-                        <div class="skill">Tableau</div>
-                        <div class="skill">Power BI</div>
-                        
-                        <div class="skill">Machine Learning</div>
-                        <div class="skill">Data Visualization</div>
-                        <div class="skill">Statistical Analysis</div>
-                        <div class="skill">Data Mining</div>
-                        <div class="skill">ETL</div>
-                        <div class="skill">Predictive Modeling</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <div class="container">
-            <h2>Resume</h2>
-            <div class="resume-container">
-                <!-- Experience Section -->
-                <div class="resume-category">
-                    <h3>Experience</h3>
-                    <div class="horizontal-grid">
-                        <!-- Experience 1 -->
-                        <div class="experience-card">
-                            <div class="experience-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 18C21.1 18 22 17.1 22 16V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V16C2 17.1 2.9 18 4 18H0V20H24V18H20ZM4 6H20V16H4V6Z"/>
-                                </svg>
-                            </div>
-                            <h4>Content Manager (Data Analysis & Reporting Focus)</h4>
-                            <div class="experience-company">AMTRON</div>
-                            <div class="experience-duration">Dec 2021 – Oct 2024</div>
-                            <p class="experience-description">
-                                AMTRON a government of Assam undertaking that works in the field of Information Technology and Electronics.
-                            </p>
-                            <ul>
-                                <li>Designed, built, and maintained interactive Power BI dashboards tracking KPIs and presenting trends to leadership teams for data-driven decision-making.</li>
-                                <li>Analyzed user engagement and portal performance metrics to deliver actionable insights, improving content reach and operational efficiency by 25%.</li>
-                                <li>Collaborated with cross-functional teams to standardize content and implement data governance practices, enhancing reliability and consistency across platforms.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Experience 2 -->
-                        <div class="experience-card">
-                            <div class="experience-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 6H16V4C16 2.89 15.11 2 14 2H10C8.89 2 8 2.89 8 4V6H4C2.89 6 2 6.89 2 8V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM10 4H14V6H10V4ZM20 19H4V8H20V19Z"/>
-                                </svg>
-                            </div>
-                            <h4>Data Analyst & MIS Executive</h4>
-                            <div class="experience-company">Go Ridez</div>
-                            <div class="experience-duration">Jan 2020 – Dec 2021</div>
-                            <p class="experience-description">
-                                GoRidez is a leading self-drive car rental company in the Northeast, particularly in Guwahati, Jorhat and Lakhhimpur.
-                            </p>
-                            <ul>
-                                <li>Built interactive Power BI dashboards visualizing rides, cancellations, and revenue trends in real time to support performance tracking.</li>
-                                <li>Delivered data-driven recommendations that optimized fleet utilization and improved key conversion KPIs.</li>
-                                <li>Collaborated with cross-functional stakeholders to translate analytical findings into actionable business strategies.</li>
-                                <li>Conducted root-cause analysis to identify drivers of customer churn and operational inefficiencies, guiding corrective actions.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Experience 3 -->
-                        <div class="experience-card">
-                            <div class="experience-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.4 16.6L4.8 12L9.4 7.4L8 6L2 12L8 18L9.4 16.6ZM14.6 16.6L19.2 12L14.6 7.4L16 6L22 12L16 18L14.6 16.6Z"/>
-                                </svg>
-                            </div>
-                            <h4>Network Administrator</h4>
-                            <div class="experience-company">Pathway Communications Infrastructure (P) Ltd</div>
-                            <div class="experience-duration">Oct 2018 – Nov 2019</div>
-                            <ul>
-                                <li>Installed and configured new systems and computer networks, ensuring robust infrastructure.</li>
-                                <li>Provided support for and managed the installation and updating of third-party applications.</li>
-                                <li>Resolved client-reported issues with a 90% first-time resolution rate, ensuring seamless network operations.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Section -->
-                <div class="resume-category">
-                    <h3>Education</h3>
-                    <div class="horizontal-grid">
-                        <!-- Education 1 -->
-                        <div class="education-card">
-                            <div class="education-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 17.18 8 16 12 16C16 16 19 17.18 19 17.18V13.18L12 17L5 13.18Z"/>
-                                </svg>
-                            </div>
-                            <h4>Master of Computer Applications (MCA)</h4>
-                            <div class="education-institution">Cotton University, Assam, India</div>
-                            <div class="education-duration">2014 - 2017</div>
-                            <ul>
-                                <li>Focused on computer applications, programming languages, Web Development, and software development.</li>
-                                
-                            </ul>
-                        </div>
-
-                        <!-- Education 2 -->
-                        <div class="education-card">
-                            <div class="education-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 17.18 8 16 12 16C16 16 19 17.18 19 17.18V13.18L12 17L5 13.18Z"/>
-                                </svg>
-                            </div>
-                            <h4>Bachelor of Computer Applications (BCA)</h4>
-                            <div class="education-institution">Gauhati University, Assam, India</div>
-                            <div class="education-duration">2011 - 2014</div>
-                            <ul>
-                                <li>Focused on computer applications, programming languages, Web Development, 
-                            and software development.</li>
-                                
-                            </ul>
-                        </div>
-
-                        <!-- Education 3 -->
-                        <div class="education-card">
-                            <div class="education-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 17.18 8 16 12 16C16 16 19 17.18 19 17.18V13.18L12 17L5 13.18Z"/>
-                                </svg>
-                            </div>
-                            <h4>PG Certificate Course in Data Science </h4>
-                            <div class="education-institution">Assam Skill University, Assam, India</div>
-                            <div class="education-duration">2025</div>
-                            <ul>
-                                <li> Focus: Data Science, Machine Learning, Statistical Analysis</li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Internship Section -->
-                <div class="resume-category">
-                    <h3>Internship</h3>
-                    <div class="horizontal-grid">
-                        <div class="internship-card">
-                            <div class="internship-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3ZM14 17H7V15H14V17ZM17 13H7V11H17V13ZM17 9H7V7H17V9Z"/>
-                                </svg>
-                            </div>
-                            <h4>Data Science Internship</h4>
-                            <div class="internship-company">Sabudh Foundation</div>
-                            <div class="internship-duration">July 2025 - Present</div>
-                            <ul>
-                                <li>Building projects on Machine Learning using Python, Scikit-learn, and automated performance tracking pipelines.</li>
-                                <li>Developed ETL pipelines to extract and transform geospatial, demographic, and infrastructure data from multiple sources for EV charging station optimization.</li>
-                                <li>Engineered data validation frameworks to ensure accuracy of spatial data and model inputs.</li>
-                                <li>Collaborating with cross-functional teams to convert model outputs into business-ready insights and visual dashboards.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certifications Section -->
-                <div class="resume-category">
-                    <h3>Certifications</h3>
-                    <div class="horizontal-grid">
-                        <!-- Certification 1 -->
-                        <div class="certification-card">
-                            <div class="certification-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
-                                </svg>
-                            </div>
-                            <h4>Python Developer Course</h4>
-                            <div class="certification-issuer">LearnVern through Skill India Digital </div>
-                            <div class="certification-duration">2023</div>
-                        </div>
-
-                        <!-- Certification 2 -->
-                        <div class="certification-card">
-                            <div class="certification-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
-                                </svg>
-                            </div>
-                            <h4>Data Science Essentials</h4>
-                            <div class="certification-issuer">Reliance Foundation Skilling Academy through Skill India Digital</div>
-                            <div class="certification-duration">2024</div>
-                        </div>
-
-                        <!-- Certification 3 -->
-                        <div class="certification-card">
-                            <div class="certification-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
-                                </svg>
-                            </div>
-                            <h4>ETL in Python and SQL</h4>
-                            <div class="certification-issuer">LinkedIn Learning</div>
-                            <div class="certification-duration">2025</div>
-                        </div>
-
-                        <!-- Certification 4 -->
-                        <div class="certification-card"> 
-                            <div class="certification-icon">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H2V20C2 21.11 2.9 22 4 22H18V20H4V6ZM20 2H8C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H20C21.11 18 22 17.11 22 16V4C22 2.89 21.11 2 20 2ZM20 16H8V4H20V16ZM12 14H16V16H12V14ZM12 11H16V13H12V11ZM12 8H16V10H12V8ZM9 8H11V14H9V8Z"/>
-                                </svg>
-                            </div>
-                            <h4>AWS Essentials: Master Cloud Computing from Scratch</h4>
-                            <div class="certification-issuer">Tutorialspoint</div>
-                            <div class="certification-duration">2026</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <!--<button class="filter-btn" data-filter="excel">Excel</button> -->
-                <button class="filter-btn" data-filter="sql">SQL</button>
-                <button class="filter-btn" data-filter="visualization">Visualization</button>
-                <button class="filter-btn" data-filter="ml">ML</button>
-            </div>
-            <div class="projects-grid">
-                <!--<div class="project-card" data-category="excel">
-                    <div class="project-img">
-                        Excel Dashboard
-                    </div>
-                    <div class="project-content">
-                        <h3>Sales Performance Dashboard</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Excel</span>
-                            <span class="project-tag">Dashboard</span>
-                        </div>
-                        <p>Interactive Excel dashboard for tracking sales performance across regions and products.</p>
-                        <div class="project-actions">
-                            <a href="#">View Project</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
-                </div>-->
-                <!--<div class="project-card" data-category="sql">
-                    <div class="project-img">
-                        Database Schema
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Database Design</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">SQL</span>
-                            <span class="project-tag">Database</span>
-                        </div>
-                        <p>Designed and implemented a comprehensive database for an e-commerce platform.</p>
-                        <div class="project-actions">
-                            <a href="#">View Project</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="project-card" data-category="visualization">
-                    <div class="project-img">
-                        <img src="img/powerbi1.png" alt="Customer Churn Analysis Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Customer Behavior & Churn Analysis</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Power BI</span>
-                            <span class="project-tag">Visualization</span>
-                        </div>
-                        <p>Completed a Customer Churn Analysis project! Used Python for data prep & Power BI for interactive dashboards, identifying key churn drivers in banking.</p>
-                        <div class="project-actions">
-                            <a href="https://github.com/Kaushik-talukdar/Data-Visualization">View Project</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="ml">
-                    <div class="project-img">
-                      <img src="img/EV.png" alt="Extreme Daily Rainfall Event Classification" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <h3>EV Charging Station Location Optimization (Data Science Internship)</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Machine Learning</span>
-                            <span class="project-tag">GeoPandas</span>
-                            <span class="project-tag">Scikit-learn</span>
-                            <span class="project-tag">Matplotlib</span>
-                            <span class="project-tag">Scipy</span>
-                        </div>
-                        <p>Designed a geospatial analytics model to optimize EV charging station placement in Bengaluru (20 km radius).</p>
-                        <div class="project-actions">
-                            <a href="https://github.com/SabudhFoundation/batch-15-ev_charging_location_optimization.git">View Project</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="ml">
-                    <div class="project-img">
-                      <img src="img/rain.png" alt="Extreme Daily Rainfall Event Classification" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Extreme Daily Rainfall Event Classification and Early Warning System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Machine Learning</span>
-                        </div>
-                        <p>Predicts localized extreme rainfall 24-48 hours in advance using historical data. </p>
-                        <div class="project-actions">
-                            <a href="https://extreme-daily-rainfall-event-classification-and-early-warning.streamlit.app/">View Project</a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="ml">
-                    <div class="project-img">
-                        <img src="img/Fraud-Detection.png" alt="Fraud Detection System" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Fraud Detection System for Charitable Donations (End-to-End ML Deployment)</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Machine Learning</span>
-                        </div>
-                        <p>Designed and deployed a scalable, modular fraud detection solution that flags high-risk transactions with actionable explanations (e.g., IP burst + location anomaly). </p>
-                        <div class="project-actions">
-                            <a href="https://github.com/Kaushik-talukdar/Fraud-Detection-in-Charitable-Donations">View Project</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="sql">
-                    <div class="project-img">
-                        <img src="img/sql1.png" alt="Global coffee chain's performance analysis" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Global coffee chain's performance analysis</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">SQL</span>
-                            <span class="project-tag">ETL</span>
-                            <span class="project-tag">Analysis</span>
-                        </div>
-                        <p>This comprehensive SQL project analyzes the performance of a fictional global coffee chain with locations in 15 countries. </p>
-                        <div class="project-actions">
-                            <a href="https://github.com/Kaushik-talukdar/SQL_Project">View Project</a>
-                            
-                        </div>
-                    </div>
-                </div> 
-                <!--<div class="project-card" data-category="visualization">
-                    <div class="project-img">
-                        Power BI Report
-                    </div>
-                    <div class="project-content">
-                        <h3>Financial Performance Report</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Power BI</span>
-                            <span class="project-tag">Finance</span>
-                        </div>
-                        <p>Comprehensive Power BI report for tracking financial KPIs and performance metrics.</p>
-                        <div class="project-actions">
-                            <a href="#">View Project</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <div class="github-link">
-                <a href="https://github.com/Kaushik-talukdar?tab=repositories" class="btn" target="_blank">View All Projects on GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Let's Connect!</h3>
-                <p>I'm always open to discussing data analytics opportunities, collaborations, or just having a chat about data science. Feel free to reach out through any of the channels below or use the Google Form.</p>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Address</h3>
-                        <p>Guwahati, Kamrup Metro, Assam, India</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>kaushiktalukdar647@gmail.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.24 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p>+91 ##########</p>
-                    </div>
-                </div>
-
-                <!-- Google Form Button -->
-                <div class="google-form-section">
-                    <h3>Send me a message</h3>
-                    <p>Prefer to use a form? Click the button below to open my Google Contact Form in a new tab.</p>
-                    <a href="https://forms.gle/jggdP9G4yhkPAMSs8" class="btn btn-google-form" target="_blank" rel="noopener">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 4.5V18h-2V6.5h-2V18H7V4h5v2.5zm5 11.5H9v-2h9v2zm0-4H9v-2h9v2zm0-4H9v-2h9v2z"/>
-                        </svg>
-                        Open Contact Form
-                    </a>
-                </div>
-                
-                <a href="https://drive.google.com/file/d/17VZjsvcMxlVOpcahtBatfPM90t7LocRT/view?usp=sharing" class="btn btn-download">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
-                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                    </svg>
-                    Download Resume
-                </a>
-            </div>
-            
-            <!-- Right side - Contact Methods -->
-            <div class="contact-methods">
-                <h3>Quick Connect</h3>
-                <p>You can also reach me directly through these platforms:</p>
-                
-                <div class="quick-contact-cards">
-                    <div class="contact-method-card">
-                        <div class="method-icon email">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </div>
-                        <h4>Email</h4>
-                        <p>kaushiktalukdar647@gmail.com</p>
-                        <a href="mailto:kaushiktalukdar647@gmail.com" class="method-link">Send Email</a>
-                    </div>
-                    
-                    <div class="contact-method-card">
-                        <div class="method-icon linkedin">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                            </svg>
-                        </div>
-                        <h4>LinkedIn</h4>
-                        <p>Connect professionally</p>
-                        <a href="https://www.linkedin.com/in/kaushiktalukdar/" class="method-link" target="_blank" rel="noopener">View Profile</a>
-                    </div>
-                    
-                    <div class="contact-method-card">
-                        <div class="method-icon github">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
-                            </svg>
-                        </div>
-                        <h4>GitHub</h4>
-                        <p>View my projects</p>
-                        <a href="https://github.com/Kaushik-talukdar" class="method-link" target="_blank" rel="noopener">Visit GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Data Analyst · Business Intelligence</div>
+      <h1>
+        Kaushik<br>
+        Talukdar<br>
+        <span class="role-line">Data Analyst</span>
+      </h1>
+      <p class="hero-desc">
+        Turning complex data into decisions that move businesses forward.
+        3+ years of core analytics experience across startups, government,
+        and research — SQL, Power BI, and Python.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
     </div>
+    <div class="hero-right">
+      <div class="photo-wrapper">
+        <div class="photo-frame">
+          <!-- To add your photo: replace this div with:
+               <img src="your-photo.jpg" alt="Kaushik Talukdar"> -->
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="14" fill="#dde1ef"/>
+              <path d="M6 58c0-14.359 11.64-26 26-26s26 11.641 26 26" fill="#dde1ef"/>
+            </svg>
+            <span>Add Your Photo</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box"><div class="stat-num">3+</div><div class="stat-label">Years Analytics</div></div>
+        <div class="stat-box"><div class="stat-num">5+</div><div class="stat-label">Yrs Total Exp.</div></div>
+        <div class="stat-box"><div class="stat-num">92%</div><div class="stat-label">ML Precision</div></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            
-            <p class="copyright">© 2025 Kaushik Talukdar. All Rights Reserved.</p>
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="eyebrow">About Me</div>
+    <h2>The analyst <em>behind the numbers</em></h2>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>I'm a <strong>Data Analyst based in Guwahati, Assam</strong>, with experience spanning a ride-hailing startup, government digital infrastructure, and data science research. My work sits at the intersection of technical analysis and business storytelling.</p>
+        <p>My career began in <strong>network infrastructure</strong> — giving me a system-level understanding of how data moves end-to-end. That foundation makes me a stronger analyst: I don't just query data, I understand where it comes from.</p>
+        <p>I specialise in <strong>KPI governance, Power BI dashboards, cohort analysis, and root cause analysis</strong>. Whether it's a government reporting cycle or a startup's retention problem, I translate numbers into narratives that drive decisions.</p>
+        <div class="about-quick">
+          <div class="quick-item"><div class="qi-icon">📍</div>Guwahati, Assam</div>
+          <div class="quick-item"><div class="qi-icon">💼</div>Open to Opportunities</div>
+          <div class="quick-item"><div class="qi-icon">🌐</div>Open to Remote</div>
+          <div class="quick-item"><div class="qi-icon">🎓</div>MCA Graduate</div>
         </div>
-    </footer>
+      </div>
+      <div class="about-highlights reveal">
+        <div class="highlight-card">
+          <div class="hc-title">📊 BI & Dashboard Development</div>
+          <div class="hc-desc">Built executive-level Power BI dashboards for government leadership and startup ops teams, enabling real-time KPI monitoring.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-title">🔍 Advanced Analytics</div>
+          <div class="hc-desc">Cohort analysis, funnel analysis, root cause analysis, A/B testing — translating raw data into actionable business strategy.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-title">🤖 Machine Learning</div>
+          <div class="hc-desc">Built fraud detection systems (92% precision) and demand forecasting models using Python and Scikit-learn.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-title">🏛️ Cross-Domain Experience</div>
+          <div class="hc-desc">Delivered data solutions across government digital platforms, ride-hailing operations, and EV infrastructure research.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="js/script.js"></script>
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="eyebrow">Skills</div>
+    <h2>My technical <em>toolkit</em></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon">🗄️</div><div class="skill-cat-name">Data Analysis & BI Tools</div></div>
+        <div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span><span class="skill-tag">Power BI</span><span class="skill-tag">DAX</span><span class="skill-tag">Power Query</span><span class="skill-tag">Tableau</span><span class="skill-tag">Excel (Advanced)</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon">🐍</div><div class="skill-cat-name">Programming & Analytics</div></div>
+        <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">EDA</span><span class="skill-tag">Data Cleaning</span><span class="skill-tag">Feature Engineering</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon">📈</div><div class="skill-cat-name">Dashboard & Reporting</div></div>
+        <div class="skill-tags"><span class="skill-tag">Dashboard Development</span><span class="skill-tag">KPI Tracking</span><span class="skill-tag">Data Visualization</span><span class="skill-tag">BI Reporting</span><span class="skill-tag">Report Automation</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon">🧠</div><div class="skill-cat-name">Analytical Techniques</div></div>
+        <div class="skill-tags"><span class="skill-tag">Cohort Analysis</span><span class="skill-tag">Funnel Analysis</span><span class="skill-tag">Root Cause Analysis</span><span class="skill-tag">A/B Testing</span><span class="skill-tag">Forecasting</span><span class="skill-tag">Regression</span><span class="skill-tag">Anomaly Detection</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon">⚙️</div><div class="skill-cat-name">Data Engineering</div></div>
+        <div class="skill-tags"><span class="skill-tag">ETL Pipelines</span><span class="skill-tag">Data Modelling</span><span class="skill-tag">Data Quality</span><span class="skill-tag">Data Validation</span><span class="skill-tag">Data Cleaning</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon">🛠️</div><div class="skill-cat-name">Tools & Platforms</div></div>
+        <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">Streamlit</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Jupyter Notebook</span><span class="skill-tag">AWS (Basics)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="eyebrow">Experience</div>
+    <h2>Where I've <em>delivered results</em></h2>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-role">Data Science Analyst (Intern)</div>
+            <div class="tl-badge">Jul 2025 – Dec 2025</div>
+          </div>
+          <div class="tl-company">Sabudh Foundation · Remote, India</div>
+          <ul class="tl-bullets">
+            <li>Designed and implemented ETL pipelines integrating geospatial, demographic, and infrastructure datasets to support site selection for EV charging station rollout across multiple regions.</li>
+            <li>Developed and evaluated regression and ML models for demand forecasting — outputs directly informed infrastructure planning recommendations presented to stakeholders.</li>
+            <li>Conducted end-to-end EDA, feature engineering, and model evaluation; translated findings into business-ready dashboards enabling non-technical stakeholders to make data-informed decisions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-role">Data Analyst (Content & Digital Analytics)</div>
+            <div class="tl-badge">Dec 2021 – Oct 2024</div>
+          </div>
+          <div class="tl-company">AMTRON – Assam Electronics Development Corporation Ltd. · Guwahati</div>
+          <div class="tl-designation">Official Designation: Content Manager</div>
+          <ul class="tl-bullets">
+            <li>Designed and delivered 2 executive-level Power BI dashboards (DAX, Power Query) for senior leadership and a government officer — enabling real-time KPI monitoring at the organisational level.</li>
+            <li>Automated recurring reporting workflows using Advanced Excel and Python (Pandas), replacing manual processes and ensuring audit-ready outputs for government reporting cycles.</li>
+            <li>Led KPI definition and standardisation, establishing a single source of truth for organisational metrics across departments.</li>
+            <li>Conducted trend, variance, and root cause analysis — reducing manual reporting effort by 25%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-role">Data Analyst & MIS Executive</div>
+            <div class="tl-badge">Jan 2020 – Dec 2021</div>
+          </div>
+          <div class="tl-company">Go Ridez (Ride-hailing Startup) · Guwahati, India</div>
+          <ul class="tl-bullets">
+            <li>Owned end-to-end analytics for a regional ride-hailing platform — tracking revenue, retention, conversion, and utilisation metrics to surface operational insights for leadership.</li>
+            <li>Wrote complex SQL queries (multi-table joins, window functions, CTEs, aggregations) against PostgreSQL databases — forming the basis of all operational reporting.</li>
+            <li>Conducted cohort and funnel analysis to identify churn drivers, contributing to a 15% improvement in operational efficiency.</li>
+            <li>Built interactive Power BI dashboards with DAX-driven KPIs providing real-time operational visibility.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <div class="tl-role">Network Administrator</div>
+            <div class="tl-badge">Oct 2018 – Nov 2019</div>
+          </div>
+          <div class="tl-company">Pathway Communications Infrastructure Pvt. Ltd. · Guwahati</div>
+          <ul class="tl-bullets">
+            <li>Managed enterprise network infrastructure and analysed system and application logs to diagnose and resolve incidents — building a technical foundation in data investigation and systems thinking that directly informed a transition into data analytics.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="eyebrow">Projects</div>
+    <h2>Selected <em>work</em></h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-icon-wrap">🛡️</div>
+          <div class="project-title">Fraud Detection System</div>
+          <p class="project-desc">End-to-end fraud detection pipeline using anomaly detection (Isolation Forest) and supervised ML. Achieved 92% precision on test data. Deployed via FastAPI with a Streamlit front-end for real-time risk scoring.</p>
+          <div class="project-tags">
+            <span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span>
+            <span class="proj-tag">SQL</span><span class="proj-tag">FastAPI</span><span class="proj-tag">Streamlit</span>
+          </div>
+          <a href="https://github.com/Kaushik-talukdar/Fraud-Detection-in-Charitable-Donations" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-icon-wrap">📉</div>
+          <div class="project-title">Customer Behaviour & Churn Analysis Dashboard</div>
+          <p class="project-desc">Predictive churn analysis using cohort segmentation and statistical modelling — identifying primary churn segments with distinct behavioural profiles. Interactive Power BI dashboard with DAX-driven KPIs tracking retention and lifecycle stages.</p>
+          <div class="project-tags">
+            <span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span>
+            <span class="proj-tag">Python</span><span class="proj-tag">SQL</span>
+          </div>
+          <a href="https://github.com/Kaushik-talukdar/Data-Visualization" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION & CERTIFICATIONS ── -->
+<section id="education">
+  <div class="section-wrap">
+    <div class="eyebrow">Education & Certifications</div>
+    <h2>Academic <em>foundation</em></h2>
+    <div class="edu-certs">
+      <div class="edu-list reveal">
+        <div class="edu-item">
+          <div class="edu-icon-box">🎓</div>
+          <div>
+            <div class="edu-degree">PG Certificate in Data Science</div>
+            <div class="edu-uni">Assam Skill University</div>
+            <div class="edu-year">Jan 2025 – Jul 2025</div>
+            <div class="edu-course">Tableau · Power BI · Machine Learning · Statistics · Data Visualization · Python for Data Science</div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon-box">💻</div>
+          <div>
+            <div class="edu-degree">Master of Computer Applications (MCA)</div>
+            <div class="edu-uni">Cotton University, Assam</div>
+            <div class="edu-year">2017</div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon-box">📚</div>
+          <div>
+            <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+            <div class="edu-uni">Gauhati University, Assam</div>
+            <div class="edu-year">2014</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="cert-section-label">Certifications</div>
+        <div class="cert-list">
+          <div class="cert-row">
+            <div class="cert-bar"></div>
+            <div class="cert-info">
+              <div class="cert-name">AWS Essentials: Master Cloud Computing</div>
+              <div class="cert-issuer">Tutorialspoint</div>
+            </div>
+            <div class="cert-year-badge">Feb 2026</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-bar"></div>
+            <div class="cert-info">
+              <div class="cert-name">Data Science Essentials</div>
+              <div class="cert-issuer">Reliance Foundation / Skill India Digital</div>
+            </div>
+            <div class="cert-year-badge">Dec 2024</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-bar"></div>
+            <div class="cert-info">
+              <div class="cert-name">Python Programming</div>
+              <div class="cert-issuer">Reliance Foundation / Skill India Digital</div>
+            </div>
+            <div class="cert-year-badge">Dec 2024</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-bar"></div>
+            <div class="cert-info">
+              <div class="cert-name">Microsoft Power BI Data Analyst (PL-300)</div>
+              <div class="cert-issuer">Microsoft</div>
+            </div>
+            <div class="cert-progress">Expected May 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>Let's <em>connect</em></h2>
+    <p class="contact-sub">Open to Data Analyst, BI Analyst, and MIS roles. Based in Guwahati — open to remote opportunities.</p>
+    <div class="contact-grid">
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your message..."></textarea>
+        <button type="submit" class="btn-submit">Send Message →</button>
+      </form>
+      <div class="contact-info">
+        <div class="contact-info-label">Get in touch directly</div>
+        <a href="mailto:kaushiktalukdar647@gmail.com" class="contact-detail">
+          <div class="cd-icon">✉️</div>
+          <div><div class="cd-label">Email</div><div class="cd-value">kaushiktalukdar647@gmail.com</div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/kaushiktalukdar" target="_blank" class="contact-detail">
+          <div class="cd-icon">💼</div>
+          <div><div class="cd-label">LinkedIn</div><div class="cd-value">linkedin.com/in/kaushiktalukdar</div></div>
+        </a>
+        <a href="https://kaushik-talukdar.github.io/" target="_blank" class="contact-detail">
+          <div class="cd-icon">🌐</div>
+          <div><div class="cd-label">Portfolio</div><div class="cd-value">kaushik-talukdar.github.io</div></div>
+        </a>
+        <a href="tel:+918011697844" class="contact-detail">
+          <div class="cd-icon">📞</div>
+          <div><div class="cd-label">Phone</div><div class="cd-value">+91-8011697844</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Kaushik Talukdar<span>.</span></div>
+  <p>© 2026 · Data Analyst · Guwahati, India</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

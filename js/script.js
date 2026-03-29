@@ -1,127 +1,71 @@
-// Mobile Navigation Toggle
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+/* ============================================
+   KAUSHIK TALUKDAR — PORTFOLIO JAVASCRIPT
+   script.js
+   ============================================ */
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
-});
-
-// Typing Effect for Home Section
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        } else {
-            // Keep the cursor blinking
-            element.style.borderRight = '3px solid white';
-            element.style.animation = 'blink 1s infinite';
-        }
+/* ── SCROLL REVEAL ANIMATION ── */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
     }
-    
-    type();
+  });
+}, { threshold: 0.1 });
+
+// Observe all reveal and timeline elements
+document.querySelectorAll('.reveal, .tl-item').forEach((el, i) => {
+  // Stagger timeline items with a delay
+  if (el.classList.contains('tl-item')) {
+    el.style.transitionDelay = `${i * 0.08}s`;
+  }
+  revealObserver.observe(el);
+});
+
+/* ── CONTACT FORM SUBMISSION ── */
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-submit');
+  const originalText = btn.textContent;
+
+  // Show success state
+  btn.textContent = '✓ Message Sent!';
+  btn.style.background = '#2a52be';
+  btn.style.color = '#fff';
+
+  // Reset after 3 seconds
+  setTimeout(() => {
+    btn.textContent = originalText;
+    btn.style.background = '';
+    btn.style.color = '';
+    e.target.reset();
+  }, 3000);
 }
 
-// Initialize typing effect when page loads
-document.addEventListener('DOMContentLoaded', function() {
-    const typingElement = document.querySelector('.typing-name');
-    const name = "Kaushik Talukdar";
-    typeWriter(typingElement, name, 150);
-});
+/* ── PHOTO HELPER ── */
+// Call this in browser console to set your profile photo:
+// setProfilePhoto('your-photo.jpg')
+function setProfilePhoto(src) {
+  const frame = document.querySelector('.photo-frame');
+  if (frame) {
+    frame.innerHTML = `<img src="${src}" alt="Kaushik Talukdar">`;
+  }
+}
 
-// Project Filtering
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+/* ── ACTIVE NAV LINK ON SCROLL ── */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        
-        // Add active class to clicked button
-        button.classList.add('active');
-        
-        const filterValue = button.getAttribute('data-filter');
-        
-        projectCards.forEach(card => {
-            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-});
-
-// Contact Form Submission
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // In a real application, you would send this data to a server
-    // For this example, we'll just show an alert
-    alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-    
-    // Reset the form
-    contactForm.reset();
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 80,
-                behavior: 'smooth'
-            });
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.style.color = '';
+        if (link.getAttribute('href') === `#${entry.target.id}`) {
+          link.style.color = 'var(--navy)';
         }
-    });
-});
+      });
+    }
+  });
+}, { threshold: 0.4 });
 
-// Active navigation link highlighting
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    let current = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === current) {
-            link.classList.add('active');
-        }
-    });
-});
+sections.forEach(section => navObserver.observe(section));
