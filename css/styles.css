@@ -273,7 +273,9 @@ h2 em { font-style: italic; color: var(--navy-light); }
 }
 .project-card:hover { box-shadow: 0 16px 40px rgba(15,37,87,0.12); transform: translateY(-5px); }
 .project-banner { height: 5px; background: linear-gradient(90deg, var(--navy), var(--navy-light)); }
-.project-card:nth-child(2) .project-banner { background: linear-gradient(90deg, var(--gold), #e8c96a); }
+.project-card.pc2 .project-banner { background: linear-gradient(90deg, var(--gold), #e8c96a); }
+.project-card.pc3 .project-banner { background: linear-gradient(90deg, #1a7a4a, #2ecc71); }
+.project-card.pc4 .project-banner { background: linear-gradient(90deg, #6a0dad, #a855f7); }
 .project-body { padding: 2rem; }
 .project-icon-wrap {
   width: 48px; height: 48px; background: var(--off-white);
